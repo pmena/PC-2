@@ -274,6 +274,12 @@ Given /^Enviar materno "(.*?)"$/ do |arg1|
   arg1.should == ""
 end
 
-Then /^Deberia ver es "(.*?)"$/ do |arg1|
+When /^Click "(.*?)"$/ do |arg1|
+  with_scope(arg1) do
+    click_link("Enviar")
+  end
+end
+
+Then /^Deberia visitar es "(.*?)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
