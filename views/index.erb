@@ -1,0 +1,27 @@
+<html>
+
+<head>
+</head>
+<body>
+
+<form method="POST">
+	<label>Username</label>
+	<input type="text" name="username" id="username" value="<%=@username %>" />
+	<label>Nombre</label>	
+	<input type="text" name="nombre" id="nombre" value="<%=@nombre %>" />
+	<label>Apellido paterno</label>
+	<input type="text" name="paterno" id="paterno" value="<%=@paterno %>" />
+	<label>Apellido materno</label>
+	<input type="text" name="materno" id="materno" value="<%=@materno %>" />
+	<input type="submit"  value="Enviar" />
+	<br />
+
+	<% if @estado =="error" %>
+		<div style='border:1px solid #bbb'> Error de validación: <br /> Datos incompletos. </div>
+	<% end %>
+
+</form>
+
+</body>
+
+</html>
