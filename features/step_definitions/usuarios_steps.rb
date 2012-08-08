@@ -215,3 +215,54 @@ end
 Then /^show me the page$/ do
   save_and_open_page
 end
+
+
+
+
+Given /^Enviar username  con "(.*?)"$/ do |arg1|
+  if arg1 =="pmena"
+    "pmena"
+  end
+  ""
+end
+
+Given /^Enviar nombre con "(.*?)"$/ do |arg1|
+  if arg1 =="Pablo"
+    "Pablo"
+  end
+  ""
+end
+
+Given /^Enviar paterno con "(.*?)"$/ do |arg1|
+  if arg1 =="Mena"
+    "Mena"
+  end
+  ""
+end
+
+Given /^Enviar materno con "(.*?)"$/ do |arg1|
+  if arg1 =="Medrano"
+    "Medrano"
+  end
+  ""
+end
+
+When /^Presiono "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^username es "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^nombre es "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^paterno es "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end
+
+Then /^materno es "(.*?)"$/ do |arg1|
+  pending # express the regexp above with the code you wish you had
+end

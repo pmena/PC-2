@@ -9,8 +9,8 @@ Scenario: Validar Datos
 	And  Enviar paterno con "Mena" 
 	And  Enviar materno con "Medrano" 
 	When Presiono "Guardar"
-	Then nombre es Pedro
-	And  nombre es "Pablo" 
+	Then username es "pmena"
+	And  nombre es "Pablo1" 
 	And  paterno es "Mena" 
 	And  materno es "Medrano" 
 
