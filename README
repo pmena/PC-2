@@ -5,13 +5,13 @@ Integrantes:
 - Pedro Valerio Solari
 
 Aplicación Web
-- Sinatra		:	lib/App.rb
-- Vistas 		:	views/index.erb
-				views/mensaje.erb
+- Sinatra		:lib/App.rb
+- Vistas 		:views/index.erb
+				 views/mensaje.erb
 
 Cucumber
-- Features 			:	features/
-- Step definitions	:	features/step_definitions/usuarios.feature
-						features/step_definitions/usuarios_steps.rb
+- Features 			:features/
+- Step definitions	:features/step_definitions/usuarios.feature
+					 features/step_definitions/usuarios_steps.rb
 
 
