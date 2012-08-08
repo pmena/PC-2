@@ -275,11 +275,11 @@ Given /^Enviar materno "(.*?)"$/ do |arg1|
 end
 
 When /^Click "(.*?)"$/ do |arg1|
-  with_scope(arg1) do
-    click_link("Enviar")
-  end
+  
+    visit path_to("usuarios")
+  
 end
 
-Then /^Deberia visitar es "(.*?)"$/ do |arg1|
+Then /^Deberia visitar "(.*?)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end

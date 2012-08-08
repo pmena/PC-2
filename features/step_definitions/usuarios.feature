@@ -22,3 +22,12 @@ Scenario: Todos los datos son obligatorios
 	And  Enviar materno "" 
 	When Click "Enviar"
 	Then Deberia visitar "index"
+
+
+Scenario: Mensaje de confirmacion
+	Given Enviar username "pmena" 
+	And  Enviar nombre "Pablo" 
+	And  Enviar paterno "Mena" 
+	And  Enviar materno "Medrano" 
+	When Click "Enviar"
+	Then Deberia visitar "mensaje"
