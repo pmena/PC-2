@@ -220,49 +220,60 @@ end
 
 
 Given /^Enviar username  con "(.*?)"$/ do |arg1|
-  if arg1 =="pmena"
-    "pmena"
-  end
-  ""
+  arg1.should == "pmena"
 end
 
 Given /^Enviar nombre con "(.*?)"$/ do |arg1|
-  if arg1 =="Pablo"
-    "Pablo"
-  end
-  ""
+  arg1.should == "Pablo"
 end
 
 Given /^Enviar paterno con "(.*?)"$/ do |arg1|
-  if arg1 =="Mena"
-    "Mena"
-  end
-  ""
+arg1.should == "Mena"
 end
 
 Given /^Enviar materno con "(.*?)"$/ do |arg1|
-  if arg1 =="Medrano"
-    "Medrano"
-  end
-  ""
+  arg1.should == "Medrano"
 end
 
 When /^Presiono "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+  ""
 end
 
 Then /^username es "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+  arg1.should == "pmena"
 end
 
 Then /^nombre es "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+  arg1.should == "Pablo"
 end
 
 Then /^paterno es "(.*?)"$/ do |arg1|
-  pending # express the regexp above with the code you wish you had
+  arg1.should == "Mena"
 end
 
 Then /^materno es "(.*?)"$/ do |arg1|
+  arg1.should == "Medrano"
+end
+
+
+
+
+Given /^Enviar username "(.*?)"$/ do |arg1|
+  arg1.should == "pmena"
+end
+
+Given /^Enviar nombre "(.*?)"$/ do |arg1|
+  arg1.should == ""
+end
+
+Given /^Enviar paterno "(.*?)"$/ do |arg1|
+  arg1.should == "Mena"
+end
+
+Given /^Enviar materno "(.*?)"$/ do |arg1|
+  arg1.should == ""
+end
+
+Then /^Deberia ver es "(.*?)"$/ do |arg1|
   pending # express the regexp above with the code you wish you had
 end
